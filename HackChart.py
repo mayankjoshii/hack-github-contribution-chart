@@ -4,7 +4,7 @@ def HackForDays(inNumberOfDays):
 
 	for itr in range(inNumberOfDays):
 		
-		dateString = str(itr) + ' days ago'
+		dateString = str(itr) + ' day ago \n'
 		with open('commit.log', 'a') as logFile:
 			logFile.write(dateString)
 
@@ -12,7 +12,7 @@ def HackForDays(inNumberOfDays):
 		os.system('git commit --date="' + dateString + '" -m "commit nuber=' + str(itr) + '"')
 
 
-	os.system('git push origin master')
+	os.system('git push -u')
 
 
 if __name__ == "__main__":
