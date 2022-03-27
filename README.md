@@ -1,1 +1,1 @@
-# hack-github-contribution-chart
+# Hack-Github-Contribution-Chart
