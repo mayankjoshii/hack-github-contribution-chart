@@ -79,7 +79,7 @@ if __name__ == "__main__":
 	"\nEnter number of days for which you want to make commit in past\n"\
 	"Format: Number of Days in integer format\n"\
 	"Example: 107 (if you want to make commit for last 107 days)\n"\
-	"\nYour Input:"
+	"\nYour Input: "
 
 	numberOfDays = input(helpString)
 	numberOfDays = CheckInputType(numberOfDays)
