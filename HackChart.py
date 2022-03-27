@@ -1,17 +1,17 @@
 import os
 
 '''
-This function makes commit for given numbe of days
+This function makes commit for given number of days
 @inNumberOfDays: number of days for which we want to
 				 make commit in past
 '''
 def HackForDays(inNumberOfDays):
 
-	#iterate the given number of days
+	#Iterate the given number of days
 	for itr in range(inNumberOfDays):
 
 		'''
-		update it at every iteration to
+		Update it at every iteration to
 		make each commit unique
 		'''
 		dateString = str(itr) + ' day ago \n'
@@ -33,24 +33,39 @@ def HackForDays(inNumberOfDays):
 		os.system('git commit --date="' + dateString + '" -m "commit nuber=' + str(itr) + '"')
 
 
-	#finally push all the commits to the github
+	#Finally push all the commits to the github
 	os.system('git push -u')
 
 	#Print success message
-	print("I have successfully hacked your github contribution chart for last " + str(inNumberOfDays) + " days 🥳")
+	print("I have successfully hacked your github contribution chart for last " + str(inNumberOfDays))
+	if inNumberOfDays == 1:
+		print(" day 🥳")
+	else:
+		print(" days 🥳")
 
+	return True
+
+
+'''
+This function checks whether given input is of integer
+type or not
+@inNumberOfDays: number of days for which we want to
+				 make commit in past
+'''
 def CheckInputType(inNumberOfDays):
 	
 	try:
 		daysAsInt = int(inNumberOfDays)
 		return daysAsInt
+
 	except:
-		print("I caught you trying to hack the program.🙂 \nI expect only integer input")
+		print("I caught you trying to hack me.🙂 \nI expect only integer input")
 		return 0
 
 
-#Execution Starts here
-
+'''
+Program entry point
+'''
 if __name__ == "__main__":
 
 	helpString = "\nEnter number of days for which you want to make commit in past\n"\
@@ -61,5 +76,6 @@ if __name__ == "__main__":
 	numberOfDays = input(helpString)
 	numberOfDays = CheckInputType(numberOfDays)
 
-	HackForDays(numberOfDays)
+	if numberOfDays > 0:
+		HackForDays(numberOfDays)
 				
