@@ -37,11 +37,14 @@ def HackForDays(inNumberOfDays):
 	os.system('git push -u')
 
 	#Print success message
-	print("I have successfully hacked your github contribution chart for last " + str(inNumberOfDays))
+	successString = "I have successfully hacked your github contribution chart for last " + str(inNumberOfDays)
+	
 	if inNumberOfDays == 1:
-		print(" day 🥳")
+		dayType = " day 🥳"
 	else:
-		print(" days 🥳")
+		dayType = " days 🥳"
+
+	print(successString+dayType)
 
 	return True
 
