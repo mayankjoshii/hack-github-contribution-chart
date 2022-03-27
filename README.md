@@ -21,11 +21,11 @@ python3 HackChart.py
 It may take few seconds depending upon the number of days you have chosen.
 
 ### Output Looks like
-![before](images/before.png)
+![before](images/original-contribution-chart.png)
 
 to
 
-![after](images/after.png)
+![after](images/hacked-contribution-chart.png)
 
 # License
 
