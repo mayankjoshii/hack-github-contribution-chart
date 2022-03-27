@@ -12,7 +12,7 @@ python3 --version
 Python 3.7.6
 ```
 
-### Usage Instructions
+## Usage Instructions
 
 Run HackChart.py file using the following command 
 ```
@@ -20,10 +20,13 @@ python3 HackChart.py
 ```
 It may take few seconds depending upon the number of days you have chosen.
 
-### Output Looks like
+## Output
+
+The origial GitHub contribution chart 👇🏻
+
 ![before](images/original-contribution-chart.png)
 
-to
+The hacked GitHub contribution chart 👇🏻
 
 ![after](images/hacked-contribution-chart.png)
 
