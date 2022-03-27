@@ -7,8 +7,8 @@ This function makes commit for given number of days
 '''
 def HackForDays(inNumberOfDays):
 
+	print('===='*19)
 
-	print('===='*20)
 	#Iterate the given number of days
 	for itr in range(inNumberOfDays):
 
