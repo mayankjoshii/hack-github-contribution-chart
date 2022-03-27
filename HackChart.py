@@ -7,6 +7,8 @@ This function makes commit for given number of days
 '''
 def HackForDays(inNumberOfDays):
 
+
+	print('===============================================')
 	#Iterate the given number of days
 	for itr in range(inNumberOfDays):
 
@@ -35,6 +37,8 @@ def HackForDays(inNumberOfDays):
 
 	#Finally push all the commits to the github
 	os.system('git push -u')
+
+	print('===============================================')
 
 	#Print success message
 	successString = "\nI have successfully hacked your github contribution chart📈 for last " + str(inNumberOfDays)
