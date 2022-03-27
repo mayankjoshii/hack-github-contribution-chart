@@ -35,7 +35,7 @@ def HackForDays(inNumberOfDays):
 		git commit --date is used to make commit in past
 		'''
 		os.system('git add .')
-		os.system('git commit --date="' + dateString + '" -m "commit nuber=' + str(itr) + '"')
+		os.system('git commit --date="' + dateString + '" -m "commit via HackChart script"')
 
 
 	#Finally push all the commits to the github
