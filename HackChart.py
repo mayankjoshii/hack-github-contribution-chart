@@ -36,6 +36,18 @@ def HackForDays(inNumberOfDays):
 	#finally push all the commits to the github
 	os.system('git push -u')
 
+	#Print success message
+	print("I have successfully hacked your github contribution chart for last " + str(inNumberOfDays) + " days 🥳")
+
+def CheckInputType(inNumberOfDays):
+	
+	try:
+		daysAsInt = int(inNumberOfDays)
+		return daysAsInt
+	except:
+		print("I caught you trying to hack the program.🙂 \nI expect only integer input")
+		return 0
+
 
 #Execution Starts here
 
@@ -43,10 +55,11 @@ if __name__ == "__main__":
 
 	helpString = "\nEnter number of days for which you want to make commit in past\n"\
 	"Format: Number of Days in integer format\n"\
-	"Example: 107 (if you wnat to make commit for last 107 days\n"\
+	"Example: 107 (if you want to make commit for last 107 days)\n"\
 	"\nYour Input:"
 
-	numberOfDays = int(input(helpString))
+	numberOfDays = input(helpString)
+	numberOfDays = CheckInputType(numberOfDays)
 
 	HackForDays(numberOfDays)
 				
