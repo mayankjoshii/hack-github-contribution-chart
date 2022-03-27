@@ -6,6 +6,12 @@
 
 A python based script to help you modify your github contribution chart back in the past. This project is created only for educational purposes.
 
+### Inspiration
+The inspiration for this project comes from the very famous meme 👇 
+
+![You Vs The guy she tells you not to worry about](https://img.devrant.com/devrant/rant/r_957017_r4A2p.jpg)
+
+
 ## Prerequisite 
 ```
 python3 --version
