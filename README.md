@@ -24,9 +24,12 @@ Run HackChart.py file using the following command
 ```
 python3 HackChart.py
 ```
-It may take few seconds depending upon the number of days you have chosen.
+
+![Sample programm screen](images/sample_exection.png)
 
 ## Output
+
+It may take few seconds depending upon the number of days you have chosen.
 
 The origial GitHub contribution chart 👇🏻
 
