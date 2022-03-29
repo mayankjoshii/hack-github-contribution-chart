@@ -1,7 +1,6 @@
 # Hack-Github-Contribution-Chart
 
 ![Version Details](https://img.shields.io/badge/version-22.03.00-brightgreen.svg)
-![GitHub contributors](https://img.shields.io/github/contributors/mayankjoshii/hack-github-contribution-chart.svg)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 A python based script to help you modify your github contribution chart back in the past. This project is created only for educational purposes.
